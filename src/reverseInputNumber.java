@@ -16,10 +16,16 @@ public class reverseInputNumber {
 		int reversedNumber = 0;
 		int remainder;
 		
+		//begin loop
 		while(originalNumber != 0){
 			
+			//this gives the remainder with numbers divisible by 10
 			remainder = originalNumber % 10;
+			
+			//this reverses the numbers input - one by one
 			reversedNumber = reversedNumber * 10 + remainder;
+			
+	 
 			originalNumber = originalNumber / 10;
 		}
 		
